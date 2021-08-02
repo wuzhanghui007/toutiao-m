@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>222</h1>
+    <div  class="text">222</div>
     <div>
       <i class=" toutiao toutiao-dianzan2"></i>
     </div>
@@ -21,6 +21,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.text{
+  width: 375px;
+  height: 50px;
+  background-color: pink;
+}
 
 </style>
