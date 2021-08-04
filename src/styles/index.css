@@ -67,3 +67,14 @@
 .toutiao-yuedu:before {
   content: "\e613";
 }
+body {
+  background-color: #f5f7f9;
+}
+.page-nav-bar {
+  background-color: #3296fa !important;
+  height: 88px;
+}
+.page-nav-bar .van-nav-bar__title,
+.page-nav-bar .van-icon {
+  color: #fff;
+}
