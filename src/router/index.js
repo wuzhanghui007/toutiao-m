@@ -7,7 +7,37 @@ const routes = [{
   path: '/login', name: 'login', component: () => import('@/views/login')
 },
 {
-  path: '/', redirect: '/login'
+  path: '/',
+
+  component: () => import('@/views/layout'),
+  children: [
+    {
+      path: '',
+      redirect: 'home'
+    },
+    {
+      path: 'home',
+      name: 'home',
+      component: () => import('@/views/home')
+    },
+    {
+      path: 'qa',
+      name: 'qa',
+      component: () => import('@/views/qa')
+    },
+    {
+      path: 'video',
+      name: 'video',
+      component: () => import('@/views/video')
+    },
+    {
+      path: 'my',
+      name: 'my',
+      component: () => import('@/views/my')
+    }
+
+  ]
+
 }]
 const router = new VueRouter({
   routes

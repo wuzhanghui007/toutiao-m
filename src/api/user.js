@@ -1,4 +1,5 @@
 import request from '@/utils/request'
+
 // 用户登录请求
 export const login = data => {
   return request({
@@ -13,6 +14,19 @@ export const sendSms = data => {
   return request({
     method: 'GET',
     url: `app/v1_0/sms/codes/${data}`
+
+  })
+}
+/// app/v1_0/user/profile
+// 获取用户数据
+export const getUserInfo = () => {
+  return request({
+    method: 'GET',
+    url: '/app/v1_0/user'
+    /*  headers: {
+       Authorization: `Bearer ${store.state.user.token}`
+         // Authorization: `Bearer ${store.state.user.token}`
+     } */
 
   })
 }
