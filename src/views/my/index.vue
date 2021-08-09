@@ -106,7 +106,7 @@ export default {
       try {
         const { data } = await getUserInfo()
         this.userInfo = data.data
-        console.log(data.data)
+        // console.log(data.data)
       } catch (err) {
         console.log('获取用户信息失败' + err)
       }

@@ -7,10 +7,11 @@ const TOKEN_KEY = 'TOUTIAO_USER'
 
 export default new Vuex.Store({
   state: {
-    user: {
-      // user: JSON.parse(window.localStorage.getItem(TOKEN_KEY))
-      user: getItem(TOKEN_KEY)
-    }
+    /*  user: {
+       // user: JSON.parse(window.localStorage.getItem(TOKEN_KEY))
+       user: getItem(TOKEN_KEY)
+     } */
+    user: getItem(TOKEN_KEY)
 
   },
   mutations: {

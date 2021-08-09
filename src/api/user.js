@@ -22,11 +22,24 @@ export const sendSms = data => {
 export const getUserInfo = () => {
   return request({
     method: 'GET',
-    url: '/app/v1_0/user'
+    url: 'app/v1_0/user'
+    /* headers: {
+      //Authorization: `Bearer ${store.state.user.token}`
+
+    } */
+
+  })
+}
+
+// 获取用户频道
+export const getUserChannels = () => {
+  return request({
+    method: 'GET',
+    url: 'app/v1_0/user/channels'
     /*  headers: {
-       Authorization: `Bearer ${store.state.user.token}`
-         // Authorization: `Bearer ${store.state.user.token}`
-     } */
+         Authorization: `Bearer ${store.state.user.token}`
+           // Authorization: `Bearer ${store.state.user.token}`
+       } */
 
   })
 }

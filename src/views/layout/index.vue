@@ -43,10 +43,11 @@ export default {
 
 <style lang="less" scoped>
 .layout-container{
-  .layout-tabbar{
+ /deep/ .layout-tabbar{
     .toutiao{
       font-size: 40px;
     }
+
     span{
       font-size: 20px;
     }
