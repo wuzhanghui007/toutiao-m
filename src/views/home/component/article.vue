@@ -16,9 +16,12 @@
 >
 <!--   <van-cell v-for="(article,index) in list" :key="index" :title="article.title" />
 -->
-    <article-item v-for="(article,index) in list"
+    <article-item
+     v-for="(article,index) in list"
     :key="index"
-   :article="article"></article-item>
+   :article="article"
+   >
+   </article-item>
 
    </van-list>
     </van-pull-refresh>

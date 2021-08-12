@@ -40,7 +40,6 @@
       </van-cell>
       <van-grid :gutter="10" class="recommend-grid">
         <van-grid-item class="grid-item"
-        icon="plus"
         v-for="value in recommendChannels" :key="value.id"
          :text="value.name"  @click="onAddChannel(value)"/>
       </van-grid>

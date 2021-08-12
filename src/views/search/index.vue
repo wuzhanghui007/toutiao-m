@@ -48,6 +48,7 @@ export default {
     searchResult,
     searchSuggestion
   },
+
   data () {
     return {
       isResultShow: false, // 控制搜索结果的展示

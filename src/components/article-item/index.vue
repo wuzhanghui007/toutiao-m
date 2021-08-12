@@ -1,5 +1,15 @@
 <template>
-<van-cell class="article-item">
+<!-- :to="'/article/'+article.art_id" -->
+<van-cell
+:badge="99999"
+   :to="{
+      // 根据路由名称进行跳转
+     name:'article-contain',
+     // 传递路由动态参数
+     params:{
+      articleId: article.art_id
+     }}"
+  class="article-item" >
   <div slot="title" class="title"> {{ article.title }}</div>
 
   <div slot="label">
