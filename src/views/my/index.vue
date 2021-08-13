@@ -13,7 +13,10 @@
               <span>{{userInfo.intro}}</span>
          </div>
          <div class="right">
-           <van-button type="default" round  size="mini">编辑资料</van-button>
+           <van-button
+           to="/user/profile"
+
+           type="default" round  size="mini">编辑资料</van-button>
          </div>
        </div>
        <div class="data-stats">

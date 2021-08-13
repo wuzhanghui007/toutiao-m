@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "cropperjs": "^1.5.12",
     "dayjs": "^1.10.6",
     "json-bigint": "^1.0.0",
     "lib-flexible": "^0.3.2",

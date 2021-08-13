@@ -8,7 +8,13 @@ const routes = [{
   name: 'login',
   component: () =>
     import('@/views/login')
+}, {
+  path: '/user/profile',
+  name: 'user-profile',
+  component: () =>
+    import('@/views/user-profile')
 },
+
 {
   path: '/search',
   name: 'search',

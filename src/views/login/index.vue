@@ -57,6 +57,14 @@
   </div>
   </van-form>
 
+  <div class="help">
+          <h4>测试账号</h4>
+
+         <div> mobile: 13911111111</div>
+         <div>code:246810</div>
+
+        </div>
+
 </div>
 </template>
 
@@ -67,8 +75,8 @@ export default {
   data () {
     return {
       uesr: {
-        mobile: '13911111111',
-        code: '246810'
+        mobile: '', // 13911111111
+        code: ''// 246810
       },
       userFormRules: {
         mobile: [{
@@ -177,6 +185,13 @@ export default {
       background-color: #6db4fb;
       border: none;
     }
+  }
+  .help{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    font-size: 30px;
   }
 }
 
