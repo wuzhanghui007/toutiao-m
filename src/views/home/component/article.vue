@@ -56,7 +56,7 @@ export default {
   },
   methods: {
     async  onLoad () {
-      // 异步更新数据
+      // 异步更新数据to
       // ajax 请求
       // console.log(this.channels);
       try {
