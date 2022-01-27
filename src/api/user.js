@@ -4,7 +4,7 @@ import request from '@/utils/request'
 export const login = data => {
   return request({
     method: 'POST',
-    url: 'app/v1_0/authorizations',
+    url: '/v1_0/authorizations',
     data
   })
 }
@@ -13,7 +13,7 @@ export const login = data => {
 export const sendSms = data => {
   return request({
     method: 'GET',
-    url: `app/v1_0/sms/codes/${data}`
+    url: `/v1_0/sms/codes/${data}`
 
   })
 }
@@ -22,7 +22,7 @@ export const sendSms = data => {
 export const getUserInfo = () => {
   return request({
     method: 'GET',
-    url: 'app/v1_0/user'
+    url: '/v1_0/user'
     /* headers: {
           //Authorization: `Bearer ${store.state.user.token}`
 
@@ -35,7 +35,7 @@ export const getUserInfo = () => {
 export const getUserChannels = () => {
   return request({
     method: 'GET',
-    url: 'app/v1_0/user/channels'
+    url: '/v1_0/user/channels'
     /*  headers: {
              Authorization: `Bearer ${store.state.user.token}`
                // Authorization: `Bearer ${store.state.user.token}`
@@ -50,7 +50,7 @@ export const getUserChannels = () => {
 export const addFollow = target => {
   return request({
     method: 'POST',
-    url: '/app/v1_0/user/followings',
+    url: '/v1_0/user/followings',
     // app/v1_0/user/followings
     data: {
       target
@@ -64,7 +64,7 @@ export const addFollow = target => {
 export const deleteFollow = target => {
   return request({
     method: 'DELETE',
-    url: `/app/v1_0/user/followings/${target}`
+    url: `/v1_0/user/followings/${target}`
     // app/v1_0/user/followings/:target
   })
 }
@@ -74,7 +74,7 @@ export const deleteFollow = target => {
 export const getUserProfile = target => {
   return request({
     method: 'GET',
-    url: '/app/v1_0/user/profile'
+    url: '/v1_0/user/profile'
   })
 }
 
@@ -84,7 +84,7 @@ export const getUserProfile = target => {
 export const updateUserProfile = data => {
   return request({
     method: 'PATCH',
-    url: '/app/v1_0/user/profile',
+    url: '/v1_0/user/profile',
     data
   })
 }
@@ -95,7 +95,7 @@ export const updateUserProfile = data => {
 export const updateUserPhoto = data => {
   return request({
     method: 'PATCH',
-    url: '/app/v1_0/user/photo',
+    url: '/v1_0/user/photo',
     data
   })
 }

@@ -4,7 +4,7 @@ import request from '@/utils/request'
 
 export const getSearchSuggestions = (q) => {
   return request({
-    url: 'app/v1_0/suggestion',
+    url: '/v1_0/suggestion',
     method: 'GET',
     params: {
       q
@@ -15,7 +15,7 @@ export const getSearchSuggestions = (q) => {
 
 export const getSearchResult = (params) => {
   return request({
-    url: 'app/v1_0/search',
+    url: '/v1_0/search',
     method: 'GET',
     params
   })

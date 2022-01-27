@@ -7,7 +7,11 @@ import store from '@/store'
 import JSONBig from 'json-bigint'
 
 const request = axios.create({
-  baseURL: 'http://ttapi.research.itcast.cn/', // 接口的基准路径
+  // http://ttapi.research.itcast.cn/
+  // http://toutiao-app.itheima.net/
+  // http://toutiao.itheima.net/api.html#
+  // http://toutiao.itheima.net/'
+  baseURL: 'http://toutiao.itheima.net', // 接口的基准路径http://toutiao-app.itheima.net/
   timeout: 10000,
   // 自定义后端返回的原始数据
   // data: 后端返回的原始数据，说白了就是 JSON 格式的字符串

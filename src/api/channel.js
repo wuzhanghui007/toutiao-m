@@ -5,8 +5,8 @@ import request from '../utils/request'
  */
 export const getAllchannels = () => {
   return request({
-    method: 'GEt',
-    url: 'app/v1_0/channels'
+    method: 'GET',
+    url: '/v1_0/channels'
   })
 }
 
@@ -16,7 +16,7 @@ export const getAllchannels = () => {
 export const addUserChannel = channel => {
   return request({
     method: 'PATCH',
-    url: '/app/v1_0/user/channels',
+    url: '/v1_0/user/channels',
     data: {
       channels: [channel]
     }
@@ -29,6 +29,6 @@ export const addUserChannel = channel => {
 export const deleteUserChannel = channelId => {
   return request({
     method: 'DELETE',
-    url: `/app/v1_0/user/channels/${channelId}`
+    url: `/v1_0/user/channels/${channelId}`
   })
 }
